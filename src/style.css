@@ -5,11 +5,12 @@
 }
 
 :root {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif, system-ui, -apple-system,
+        BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
-    padding: min(5em, 8%);
     font-size: 1.8rem;
 }
 
@@ -18,6 +19,7 @@ header {
     justify-content: center;
     flex-direction: column;
     margin-bottom: 4rem;
+    padding: min(5em, 8%);
 }
 
 .photo-section {
@@ -64,46 +66,84 @@ header {
     width: 40px;
 }
 
-main > h1{
+main {
+    padding: min(5em, 8%);
+    margin-bottom: 5rem;
+}
+
+main > h1 {
     text-align: center;
     margin-bottom: 1rem;
 }
 
-.projects-container{
+.projects-container {
     display: flex;
     flex-direction: column;
     gap: 4rem;
 }
 
-.project{
+.project {
     border: 1px solid gray;
 }
 
-.project-screenshot{
+.project-screenshot {
     padding: 6rem 2rem;
     background-color: #5e8f4d;
     font-size: 3rem;
     color: white;
 }
 
-.project-content{
+.project-content {
     padding: 1rem;
     padding-bottom: 4rem;
 }
 
-.project-content .name{
+.project-content .name {
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 1rem;
 }
 
-.project .name .icons > *{
+.project .name .icons > * {
     width: 30px;
     height: 30px;
 }
 
-.project-content .description{
+.project-content .description {
     margin-top: 1rem;
     font-size: 1.4rem;
+}
+
+.contact {
+    padding: min(5em, 8%);
+    background-color: #0891b2;
+    color: white;
+}
+
+.contact > h1 {
+    font-weight: 400;
+    text-align: center;
+}
+
+.contact > * {
+    margin-bottom: 1rem;
+}
+
+.contact .information {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+        sans-serif;
+}
+
+.contact .information > p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+footer > img{
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
 }
