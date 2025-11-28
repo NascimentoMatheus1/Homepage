@@ -17,6 +17,7 @@ body {
 header {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin-bottom: 4rem;
     padding: min(5em, 8%);
@@ -69,6 +70,10 @@ header {
 main {
     padding: min(5em, 8%);
     margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 main > h1 {
@@ -119,6 +124,10 @@ main > h1 {
     padding: min(5em, 8%);
     background-color: #0891b2;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact > h1 {
@@ -141,7 +150,7 @@ main > h1 {
     margin-bottom: 2rem;
 }
 
-footer > img{
+footer > img {
     max-width: 100%;
     height: auto;
     aspect-ratio: 9 / 16;
